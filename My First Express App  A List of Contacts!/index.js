@@ -4,6 +4,10 @@ const port = 8000;
 // Initializing the express app
 const app = express();
 
+app.get('/', (req,res)=>{
+    res.send('Server is running....');
+})
+
 
 app.listen(port, (err)=>{
 
